@@ -11,7 +11,7 @@ load_dotenv()
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from database import Base
+from app.database import Base
 
 # Разрешение настроек
 fileConfig(context.config.config_file_name)
