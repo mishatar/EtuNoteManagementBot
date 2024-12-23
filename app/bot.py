@@ -314,7 +314,6 @@ class NoteBot:
 
     def handle_button_click(self, update: Update, context: CallbackContext):
         query = update.callback_query
-        user_id = query.from_user.id
 
         if query.data == "create_note":
             self.create_note_prompt(query, context)
